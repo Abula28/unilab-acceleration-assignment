@@ -1,0 +1,72 @@
+@import "/public/styles/variables";
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageBtn {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: $grey-1;
+  overflow: hidden;
+}
+
+.inpTextField {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+
+  p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    &.error {
+      color: $red;
+      font-size: 15px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      transform: translateY(-30px);
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 28px;
+    border: none;
+    outline: none;
+    background: $grey-1;
+    font-size: 36px;
+
+    &::placeholder {
+      color: #a5a5a5;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    padding: 20px 100px;
+    color: #fff;
+    border-radius: 50px;
+    background: #4980c0;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,31 @@
+.cardContainer {
+  padding: 72px 131px 45px 131px;
+  border-radius: 25px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 40.8px;
+  h2 {
+    color: #000;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
