@@ -1,0 +1,57 @@
+@import "/public/styles/variables";
+.header {
+  width: 100%;
+  background: #000;
+  color: white;
+}
+
+.navbar {
+  padding: 0px 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $grey-3;
+}
+
+.logo {
+  padding: 35px 0px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+.profile {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid $grey-3;
+  gap: 47px;
+  padding: 7% 0px 7% 53px;
+  p {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+.profilePicture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

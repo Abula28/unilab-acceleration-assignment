@@ -27,7 +27,7 @@ export const Form = () => {
     }
     setError(false);
     localStorage.setItem("username", value);
-    navigate("/form");
+    navigate("/form-page");
   };
 
   useEffect(() => {
