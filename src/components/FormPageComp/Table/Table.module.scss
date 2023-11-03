@@ -1,0 +1,74 @@
+.table {
+  background-color: white;
+  width: 100%;
+}
+
+.thead {
+  width: 100%;
+
+  tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 67px;
+    td {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 132.99%;
+      text-transform: uppercase;
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
+.tbody {
+  width: 100%;
+
+  tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 67px;
+
+    td {
+      flex: 1;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 132.99%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.paginationBtns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  button {
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.99%;
+    &.active {
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
+  }
+}

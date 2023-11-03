@@ -1,22 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./FormPageComp.module.scss";
+import Filters from "./Filters/Filters";
+import { Table } from "./Table/Table";
 
 export const FormPageComp = () => {
   const [active, setActive] = useState(false);
+
   return (
     <section className={classes.pageSection}>
       <div className={classes.formContent}>
-        <div className={classes.filters}>
-          <button onClick={() => setActive(!active)}>
-            <img src={"/images/formPage/filter.png"} alt="filter-image" />
-            Filter
-          </button>
-
-          <label className={classes.search}>
-            <img src={"/images/formPage/search.png"} alt="search" />
-            <input type="text" />
-          </label>
-        </div>
+        <Filters active={active} setActive={setActive} />
+        <Table />
       </div>
     </section>
   );
