@@ -1,0 +1,12 @@
+.section {
+  height: auto;
+  padding-top: 50px;
+}
+.cardsContent {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
