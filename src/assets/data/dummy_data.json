@@ -353,7 +353,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "male",
     "points": 67,
     "personalID": 1234567890,
@@ -375,7 +375,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "male",
     "points": 89,
     "personalID": 1234567890,
@@ -408,7 +408,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "female",
     "points": 100,
     "personalID": 1234567890,
@@ -441,7 +441,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "male",
     "points": 67,
     "personalID": 1234567890,
@@ -452,7 +452,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "female",
     "points": 82,
     "personalID": 1234567890,
@@ -474,7 +474,7 @@
   },
   {
     "name": "Nikoloz Abuladze",
-    "status": "Active",
+    "status": "Inactive",
     "gender": "female",
     "points": 80,
     "personalID": 1234567890,

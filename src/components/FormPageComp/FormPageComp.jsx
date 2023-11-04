@@ -10,7 +10,7 @@ export const FormPageComp = () => {
     <section className={classes.pageSection}>
       <div className={classes.formContent}>
         <Filters active={active} setActive={setActive} />
-        <Table />
+        <Table active={active} />
       </div>
     </section>
   );
