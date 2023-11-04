@@ -4,6 +4,7 @@ import { GetStartPage } from "./Pages/GetStart";
 import { Registration } from "./components/Registration/Registration";
 import { FormPage } from "./Pages/FormPage";
 import { Header } from "./components/Header/Header";
+import { ApiPage } from "./Pages/ApiPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<GetStartPage />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/form-page" element={<FormPage />} />
+        <Route path="/api-page" element={<ApiPage />} />
       </Routes>
     </BrowserRouter>
   );
