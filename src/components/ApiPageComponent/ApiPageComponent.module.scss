@@ -1,12 +1,44 @@
 .section {
   height: auto;
   padding-top: 50px;
+  flex-direction: column;
+  gap: 50px;
 }
 .cardsContent {
   color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.paginationBtns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 0px 50px 0px;
+
+  button {
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.99%;
+    cursor: pointer;
+    &.active {
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
+  }
 }

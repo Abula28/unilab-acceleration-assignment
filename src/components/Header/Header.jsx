@@ -8,25 +8,32 @@ export const Header = () => {
   const username = localStorage.getItem("username");
   const profilePicture = localStorage.getItem("imageValue");
   const [active, setActive] = useState(false);
-  console.log(profilePicture);
-  if (location.pathname !== "/form-page") {
-    return;
-  }
+
   return (
-    <header className={classes.header}>
-      <nav className={classes.navbar}>
-        <h1 className={classes.logo}>From</h1>
-        <div className={classes.links}>
-          <Link to={"/api-page"}>API</Link>
-          <div onClick={() => setActive(!active)} className={classes.profile}>
-            <p>{username}</p>
-            <div className={classes.profilePicture}>
-              <img src={profilePicture} alt="profile-picture" />
+    <>
+      {location.pathname === "/form-page" ||
+      location.pathname === "/api-page" ? (
+        <header className={classes.header}>
+          <nav className={classes.navbar}>
+            <Link to={""} className={classes.logo}>
+              From
+            </Link>
+            <div className={classes.links}>
+              <Link to={"/api-page"}>API</Link>
+              <div
+                onClick={() => setActive(!active)}
+                className={classes.profile}
+              >
+                <p>{username}</p>
+                <div className={classes.profilePicture}>
+                  <img src={profilePicture} alt="profile-picture" />
+                </div>
+                {active && <Logout />}
+              </div>
             </div>
-            {active && <Logout />}
-          </div>
-        </div>
-      </nav>
-    </header>
+          </nav>
+        </header>
+      ) : null}
+    </>
   );
 };
